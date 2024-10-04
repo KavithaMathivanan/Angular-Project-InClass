@@ -1,0 +1,24 @@
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="id"> ID </label>
+    <input type="number" id="id" formControlName="id" />
+    </div>
+  <div class="form-group">
+    <label for="firstName"> firstName </label>
+    <input type="text" id="firstName" formControlName="firstName" />
+  </div>
+  <div class="form-group">
+    <label for="lastName"> lastName </label>
+    <input type="text" id="lastName" formControlName="lastName" />
+  </div>
+  <div class="form-group">
+    <label for="department"> department </label>
+    <input type="text" id="department" formControlName="department" />
+  </div>
+  <div class="form-group">
+    <label for="isAdmin"> isAdmin </label>
+    <input type="checkbox" id="isAdmin" formControlName="isAdmin" />
+  </div>
+  <button type="button" (click) = "onDelete()"> Delete </button>
+  <button type="button" (click)="navigateToStudentList()"> Back to List </button>
+</form>
