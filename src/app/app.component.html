@@ -1,5 +1,15 @@
+<div class="nav-bar">
+  <nav>
+    <a routerLink="/students" routerLinkActive="active"> Student List </a>
+    <a routerLink="/modify-student" routerLinkActive="active"> Modify Students </a>
+  </nav>
+</div>
+
+
+
 <div class="app-container">
   <h1>{{ title }}</h1>
 
-  <app-student-list></app-student-list>
+  <router-outlet> </router-outlet>
 </div>
+
